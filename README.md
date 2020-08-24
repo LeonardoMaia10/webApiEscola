@@ -49,5 +49,6 @@ $ dotnet install
 # iniciar o projeto
 $ dotnet start
 ```
+---
 
 😎 Desenvolvido por Leonardo Maia
