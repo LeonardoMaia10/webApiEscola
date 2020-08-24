@@ -31,7 +31,7 @@ Essa Api foi desenvolvida a partir dessas técnologias.
 
 <img src="C:\Users\LeonardoMaia\Pictures\classes.PNG">
 
---
+---
 
 ## 📚 Como baixar o projeto
 
