@@ -24,6 +24,7 @@ Essa Api foi desenvolvida a partir dessas técnologias.
 - C#
 - ASP.NET Core 3
 - EF Core 3
+- Insomnia
 
 ---
 
