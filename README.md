@@ -44,10 +44,10 @@ $ git clone https://github.com/LeonardoMaia10/webApiEscola
 $ cd escola
 
 #instalar as dependencias
-$ dotnet install
+$ yarn install
 
 # iniciar o projeto
-$ dotnet start
+$ yarn start
 ```
 ---
 
