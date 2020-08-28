@@ -1,24 +1,42 @@
-<h1>
-    Projeto escola.
-</h1>
+# Projeto escola.
 
-# Indice
+## Aprendizado
+No desenvolvimento dessa WebApi eu aprendi a calcular em datas com a funçao DateDiff, aprimorei o meu conhecimento em C# e utilizei técnicas de código limpo baseadas no livro Clean Code escrito por Robert Cecil Martin.
 
-- [Sobre](#-sobre)
+### To-do 
+Essa Web-Api pode ser melhorada implementando um banco de dados através do EF Core.
+
+## Indice
+
+- [Descrição](#-descrição)
 - [Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [Diagrama de classe](#-Diagrama-de-classe)
 - [Como Baixar o projeto](#-como-baixar-o-projeto)
 
 ---
 
-## 😃 descrição 
+## 😃 Descrição 
 
-Web api desenvolvida para tratar o tema escola e para armazenar turmas contendo os atributos: Nome,Matricula, DataDeNasicmento e idade e alunos contendo os atributos tituloDaTurma, qtdDeAlunos e idade Media. em um banco de dados em memória, o principal desafio foi de definir a idade a partir da data de nascimento informada pelo usuario para isso utilizei a funçao DateDiff que Retorna um valor que especifica o número de intervalos de tempo entre dois valores Date. assim no meu Get de idade utilizei o seguinte código
+Web api desenvolvida para tratar o tema escola e para armazenar turmas e alunos em um banco de dados em memoria contendo os seguintes atributos: 
+```
+    Turma:
+    tituloDaTurma, qtdDeAlunos, idadeMedia.
+
+    Aluno:
+    nome, matricula, dataDeNascimento, idade (calculada à partir da data atual - data de nascimento), turma.
+```
+
+o principal desafio foi de definir a idade a partir da data de nascimento informada pelo usuario para isso utilizei a funçao DateDiff que Retorna um valor que especifica o número de intervalos de tempo entre dois valores Date. assim no meu Get de idade utilizei o seguinte código
 
 ```
 $ return DateAndTime.DateDiff(DateInterval.Year, dataDeNascimento, DateTime.Now);
 ```
-
 onde coloquei que o intervalo de datas será medido em anos, e calculei entre a data de nascimento até a data atual.
+
+Para consumir a WebApi utilizamos o Swagger, Segue link de auxilio para configuraçao do Swagger.
+https://medium.com/@renato.groffe/asp-net-core-swagger-documentando-apis-com-o-package-swashbuckle-aspnetcore-5eef480ba1c0
+
+<img src=<https://user-images.githubusercontent.com/56007944/91593336-58783480-e936-11ea-8af3-8ba60e004b41.PNG">
 
 
 ---
