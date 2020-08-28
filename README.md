@@ -10,9 +10,12 @@
 
 ---
 
-## 😃 Sobre
+## 😃 descrição 
 
-<p>  Web api desenvolvida para armazenar turmas e alunos em um banco de dados em memória
+<p>  Web api desenvolvida para tratar o tema escola e para armazenar turmas contendo os atributos: Nome,Matricula, DataDeNasicmento e idade e alunos contendo os atributos tituloDaTurma, qtdDeAlunos e idade Media. em um banco de dados em memória, o principal desafio foi de definir a idade a partir da data de nascimento informada pelo usuario para isso utilizei a funçao DateDiff que Retorna um valor que especifica o número de intervalos de tempo entre dois valores Date. assim no meu Get de idade utilizei o seguinte código 
+    ``` $return DateAndTime.DateDiff(DateInterval.Year, dataDeNascimento, DateTime.Now);
+    ```
+    onde coloquei que o intervalo de datas sem em anos, e calculei entre a data de nascimento até a data atual.
 </p>
 
 ---
