@@ -41,13 +41,10 @@ Essa Api foi desenvolvida a partir dessas técnologias.
 $ git clone https://github.com/LeonardoMaia10/webApiEscola
 
 # entrar no diretório
-$ cd escola
-
-#instalar as dependencias
-$ yarn install
+$ cd webApiEscola
 
 # iniciar o projeto
-$ yarn start
+$ dotnet run
 ```
 ---
 
