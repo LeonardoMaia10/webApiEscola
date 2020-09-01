@@ -29,7 +29,7 @@ Essa Api foi desenvolvida a partir dessas técnologias.
 
 ## 📖 Diagrama de classe
 
-<img src="C:\Users\LeonardoMaia\Pictures\classes.PNG">
+<img src="https://user-images.githubusercontent.com/56007944/91089026-57d75980-e629-11ea-88a7-8427c5958577.PNG">
 
 --
 
