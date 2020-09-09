@@ -3,9 +3,6 @@
 ## Aprendizado
 No desenvolvimento dessa WebApi eu aprendi a calcular em datas com a funçao DateDiff, aprimorei o meu conhecimento em C# e utilizei técnicas de código limpo baseadas no livro Clean Code escrito por Robert Cecil Martin.
 
-### To-do 
-Essa Web-Api pode ser melhorada implementando um banco de dados através do EF Core.
-
 ## Indice
 
 - [Descrição](#-descrição)
@@ -17,13 +14,13 @@ Essa Web-Api pode ser melhorada implementando um banco de dados através do EF C
 
 ## 😃 Descrição 
 
-Web api desenvolvida para tratar o tema escola e para armazenar turmas e alunos em um banco de dados em memoria contendo os seguintes atributos: 
+Web api desenvolvida para tratar o tema escola e para armazenar turmas e alunos em um banco de dados contendo os seguintes atributos: 
 ```
     Turma:
-    tituloDaTurma, qtdDeAlunos, idadeMedia.
+    Id, tituloDaTurma, qtdDeAlunos, idadeMedia.
 
     Aluno:
-    nome, matricula, dataDeNascimento, idade (calculada à partir da data atual - data de nascimento), turma.
+    Id, nome, matricula, dataDeNascimento, idade (calculada à partir da data atual - data de nascimento), turma.
 ```
 
 o principal desafio foi de definir a idade a partir da data de nascimento informada pelo usuario para isso utilizei a funçao DateDiff que Retorna um valor que especifica o número de intervalos de tempo entre dois valores Date. assim no meu Get de idade utilizei o seguinte código
@@ -48,7 +45,6 @@ Essa Api foi desenvolvida a partir dessas técnologias.
 - C#
 - ASP.NET Core 3
 - EF Core 3
-- Insomnia
 
 ---
 
